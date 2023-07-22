@@ -1,0 +1,88 @@
+name: cour_studi_one
+description: Un nouveau projet Flutter.
+# La ligne suivante empêche le package d'être publié accidentellement sur pub.dev
+# en utilisant `flutter pub publish`. C'est préférable pour les packages privés.
+publish_to: 'none' # Supprimez cette ligne si vous souhaitez publier sur pub.dev
+
+# Ce qui suit définit la version et le numéro de build de votre application.
+# Un numéro de version est composé de trois nombres séparés par des points, comme 1.2.43,
+# suivi éventuellement d'un numéro de build séparé par un +.
+# La version et le numéro de build peuvent être modifiés lors de l'exécution de "flutter build"
+# en spécifiant respectivement --build-name et --build-number.
+# Sur Android, "build-name" est utilisé comme "versionName" et "build-number" est utilisé comme "versionCode".
+# Pour en savoir plus sur la gestion des versions Android, consultez https://developer.android.com/studio/publish/versioning
+# Sur iOS, "build-name" est utilisé comme "CFBundleShortVersionString" et "build-number" est utilisé comme "CFBundleVersion".
+# Pour en savoir plus sur la gestion des versions iOS, consultez
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# Sur Windows, "build-name" est utilisé comme parties "major", "minor" et "patch"
+# des versions du produit et du fichier, tandis que "build-number" est utilisé comme suffixe de build.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+# Les dépendances spécifient les autres packages nécessaires au bon fonctionnement de votre package.
+# Pour mettre automatiquement à jour les dépendances vers les dernières versions,
+# vous pouvez utiliser la commande `flutter pub upgrade --major-versions`.
+# Alternativement, vous pouvez mettre à jour manuellement les numéros de version ci-dessous
+# avec les dernières versions disponibles sur pub.dev. Pour voir les dépendances disposant
+# de versions plus récentes, exécutez `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # La dépendance suivante ajoute la police d'icônes Cupertino à votre application.
+  # Utilisez la classe CupertinoIcons pour les icônes de style iOS.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Le package "flutter_lints" ci-dessous contient un ensemble de lints recommandés
+  # pour encourager les bonnes pratiques de codage. L'ensemble de lints fourni par le package
+  # est activé dans le fichier "analysis_options.yaml" situé à la racine de votre package.
+  # Consultez ce fichier pour des informations sur la désactivation de règles spécifiques
+  # et l'activation de règles supplémentaires.
+  flutter_lints: ^2.0.0
+
+# Pour plus d'informations sur la partie générique Dart de ce fichier, consultez la page suivante :
+# https://dart.dev/tools/pub/pubspec
+
+# La section suivante est spécifique aux packages Flutter.
+flutter:
+
+  # La ligne suivante garantit que la police d'icônes Material est
+  # incluse dans votre application, ce qui vous permet d'utiliser les icônes
+  # de la classe MaterialIcons.
+  uses-material-design: true
+
+  # Pour ajouter des ressources à votre application, ajoutez une section "assets" comme ceci :
+  assets:
+    - assets/images/
+    # - images/a_dot_ham.jpeg
+
+  # Une ressource d'image peut faire référence à une ou plusieurs "variantes" spécifiques à la résolution,
+  # consultez https://flutter.dev/assets-and-images/#resolution-aware
+
+  # Pour des détails sur l'ajout de ressources provenant de dépendances de packages,
+  # consultez https://flutter.dev/assets-and-images/#from-packages
+
+  # Pour ajouter des polices personnalisées à votre application, ajoutez une section "fonts" ici,
+  # dans cette section "flutter". Chaque entrée de cette liste doit avoir une clé "family"
+  # avec le nom de la famille de police, et une clé "fonts" avec une liste donnant le fichier de la police
+  # et d'autres descripteurs pour la police. Par exemple :
+  fonts:
+    - family: NightmarePills-BV2w
+      fonts:
+        - asset: assets/font/NightmarePills-BV2w/NightmarePills-BV2w.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # Pour des détails sur les polices provenant de dépendances de packages,
+  # consultez https://flutter.dev/custom-fonts/#from-packages
