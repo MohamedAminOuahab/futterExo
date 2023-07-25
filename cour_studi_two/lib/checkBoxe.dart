@@ -48,7 +48,7 @@ class _MyCheckBoxState extends State<MyCheckBox> {
       items.add(row);
     });
     return Column(children: items);
-  }
+  } 
 
   @override
   Widget build(BuildContext context) {
