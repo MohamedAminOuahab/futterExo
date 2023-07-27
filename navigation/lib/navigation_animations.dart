@@ -28,7 +28,10 @@ class FristPage extends StatelessWidget {
           onPressed: () {
             Navigator.push(context, createPageRoute(const SecondPage()));
           },
-          child: const Text('Page 1'),
+          child: const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text('Page 1'),
+          ),
         ),
       ),
     );
@@ -49,7 +52,10 @@ class SecondPage extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          child: const Text('SecondPage'),
+          child: const Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text('SecondPage'),
+          ),
         ),
       ),
     );
