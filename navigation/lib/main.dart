@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
-import './navigation_animations.dart';
+import './hero.dart';
 
 void main() {
   runApp(const MyApp());
